@@ -85,6 +85,5 @@ const generateVanilla = async () => {
             : {})),
     });
 };
-generateVanilla();
 export default generateVanilla;
 //# sourceMappingURL=index.js.map
