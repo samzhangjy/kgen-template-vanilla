@@ -98,7 +98,8 @@ const generateVanilla = async () => {
       'package-ts.json',
       '.eslintrc-ts.json',
       ...(answers.useTypescript ? ['**/*.js'] : ['**/*.ts', 'tsconfig.json']),
-      ...(!answers.useESLint ? ['.eslintrc.json', '.prettierrc.json'] : []),
+      ...(!answers.useESLint ? ['.eslintrc.json'] : []),
+      ...(!answers.usePrettier ? ['.prettierrc.json'] : []),
     ],
     overrides: {
       'package.json': packageJSON,
